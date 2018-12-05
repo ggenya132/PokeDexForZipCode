@@ -1,0 +1,12 @@
+<img src="{{spriteImageEndpoint}}" alt="" /> <br />
+<b>Pokedex Entry:</b>
+<h1>{{ pokemonName }}</h1>
+<p>{{ pokedexEntry }}</p>
+
+<div class="input-container">
+  <label for="pokemonInput">Search a Pokemon</label>
+  <input type="text" [(ngModel)]="userSelectedPokemon" />
+  <button (click)="onCallPokedex()">Search pokemon</button>
+</div>
+
+<p *ngIf="loading">Loading...</p>
