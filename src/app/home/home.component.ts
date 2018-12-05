@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { PokeService } from "../poke.service";
+
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit {
 
     this.pokeService
       .getPokemonData(this.userSelectedPokemon)
-      .subscribe(mergedPayload => {
+      .subscribe((mergedPayload: any) => {
         let [pokedexData, spriteData] = mergedPayload;
         let {
           sprites: { front_default: spriteImageEndpoint }

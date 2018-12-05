@@ -1,9 +1,35 @@
 $pokeRed: #ef5350;
+$pokeRedHovered: #c62828;
 
 .navbar-main__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 4em;
+  height: 5em;
   background-color: $pokeRed;
+
+  .navbar-section__container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .navbar-item__link {
+      color: #fff;
+      transition: all 0.5s linear;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      font-size: 1.25em;
+      text-decoration: none;
+    }
+
+    .navbar-item__link:hover {
+      background-color: $pokeRedHovered;
+    }
+  }
+
+  .navbar-logo {
+    height: 50px;
+  }
 }

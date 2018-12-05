@@ -9,4 +9,4 @@
   <button (click)="onCallPokedex()">Search pokemon</button>
 </div>
 
-<p *ngIf="loading">Loading...</p>
+<app-loading-modal *ngIf="loading"></app-loading-modal>
