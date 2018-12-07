@@ -1,0 +1,13 @@
+.poke-text__container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
+  background-color: rgb(75, 75, 75);
+  margin: 0.5rem;
+  border-radius: 15px;
+  .entry {
+    color: white;
+    font-size: 1.5rem;
+  }
+}

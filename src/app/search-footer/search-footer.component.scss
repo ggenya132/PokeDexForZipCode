@@ -2,7 +2,6 @@ $pokeRed: #ef5350;
 $pokeRedHovered: #c62828;
 $pokeText: white;
 .navbar-main__container {
-  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -10,9 +9,6 @@ $pokeText: white;
   background-color: $pokeRed;
   color: $pokeText;
   .hamburger__container {
-    position: absolute;
-    top: 0;
-    left: 0;
     padding: 0.75rem;
     font-size: 2.5rem;
     margin: 0.5rem;
@@ -25,8 +21,13 @@ $pokeText: white;
     align-items: center;
   }
   .logo__container {
-    margin-left: auto;
+    width: 90%;
+    margin-left: 0.5rem;
     margin-right: auto;
+    border: 1px solid white;
+    background-color: $pokeText;
+    border-radius: 15px;
+    height: 80%;
   }
   .logo-lead {
     font-weight: 700;

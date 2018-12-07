@@ -1,5 +1,12 @@
 $pokeRed: #ef5350;
-
-.test {
-  color: $pokeRed;
+$backgroundGray: rgb(112, 112, 112);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: rgb(112, 112, 112);
 }

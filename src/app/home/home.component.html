@@ -1,4 +1,4 @@
-<div class="container">
+<div>
   <!--
     <img src="{{spriteImageEndpoint}}" alt="" /> <br />
     <p class="lead uppercase">Pokedex Entry:</p>
@@ -8,18 +8,20 @@
     </blockquote>
   -->
 
-  <div class="card" style="width: 18rem;">
-    <img
-      class="card-img-top"
-      src="{{spriteImageEndpoint}}"
-      alt="pokemon sprite"
-    />
-    <div class="card-body">
-      <h5 class="card-title">{{ pokemonName }}</h5>
-      <p class="card-text">{{ pokedexEntry }}</p>
-      <a href="#" class="btn btn-primary">Add to Favorites</a>
+  <!--
+    <div class="card" style="width: 18rem;">
+      <img
+        class="card-img-top"
+        src="{{spriteImageEndpoint}}"
+        alt="pokemon sprite"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ pokemonName }}</h5>
+        <p class="card-text">{{ pokedexEntry }}</p>
+        <a href="#" class="btn btn-primary">Add to Favorites</a>
+      </div>
     </div>
-  </div>
+  -->
 
   <!--
     <div class="input-container">
@@ -29,27 +31,31 @@
     </div>
   -->
 
-  <div class="form-inline">
-    <div class="form-group mx-sm-3 mb-2">
-      <label for="inputPassword2" class="sr-only"
-        >Pokemon name or number:</label
-      >
-      <input
-        type="text"
-        [(ngModel)]="userSelectedPokemon"
-        class="form-control"
-        id="inputPokemon"
-        placeholder="'Pikachu' or '25'"
-      />
+  <!--
+    <div class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+          <label for="inputPassword2" class="sr-only"
+            >Pokemon name or number:</label
+          >
+          <input
+            type="text"
+            [(ngModel)]="userSelectedPokemon"
+            class="form-control"
+            id="inputPokemon"
+            placeholder="'Pikachu' or '25'"
+          />
+        </div>
+        <button
+          type="submit"
+          (click)="onCallPokedex()"
+          class="btn btn-primary mb-2"
+        >
+          Search Pokedex
+        </button>
+      </div>
     </div>
-    <button
-      type="submit"
-      (click)="onCallPokedex()"
-      class="btn btn-primary mb-2"
-    >
-      Search Pokedex
-    </button>
-  </div>
-</div>
+  -->
+  <app-poke-entry></app-poke-entry>
 
-<app-loading-modal *ngIf="loading"></app-loading-modal>
+  <app-loading-modal *ngIf="loading"></app-loading-modal>
+</div>
