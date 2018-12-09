@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from "@angular/core";
+import { PokeService } from "../poke.service";
 @Component({
-  selector: 'app-search-footer',
-  templateUrl: './search-footer.component.html',
-  styleUrls: ['./search-footer.component.scss']
+  selector: "app-search-footer",
+  templateUrl: "./search-footer.component.html",
+  styleUrls: ["./search-footer.component.scss"]
 })
 export class SearchFooterComponent implements OnInit {
+  userSearchedPokemon = "";
 
-  constructor() { }
+  constructor(private pokeService: PokeService) {}
 
-  ngOnInit() {
+  onSearchPokemon() {
+    this.pokeService.callPokedex(this.userSearchedPokemon);
   }
 
+  ngOnInit() {}
 }

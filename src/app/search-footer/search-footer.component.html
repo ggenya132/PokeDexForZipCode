@@ -1,4 +1,10 @@
 <div class="navbar-main__container">
-  <input placeholder="e.g., '151' or 'Mew'" class="logo__container" />
-  <div class="hamburger__container"><i class="fas fa-search"></i></div>
+  <input
+    [(ngModel)]="userSearchedPokemon"
+    placeholder="e.g., '151' or 'Mew'"
+    class="logo__container"
+  />
+  <div class="hamburger__container" (click)="onSearchPokemon()">
+    <i class="fas fa-search"></i>
+  </div>
 </div>
