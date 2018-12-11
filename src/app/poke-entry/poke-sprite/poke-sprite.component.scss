@@ -3,7 +3,30 @@
   align-items: center;
   display: flex;
   max-height: 250px;
+  width: 50%;
+  margin: auto;
+  // -webkit-filter: blur(5px);
+  // -moz-filter: blur(5px);
+  // -o-filter: blur(5px);
+  // -ms-filter: blur(5px);
+  // filter: blur(5px);
+
+  background-color: rgb(75, 75, 75);
+  border-radius: 50%;
   img {
     height: 400px;
+  }
+}
+
+.blurin-animation-active {
+  animation: blurin 0.5s ease-in;
+}
+@keyframes blurin {
+  from {
+    filter: blur(5px);
+  }
+
+  to {
+    filter: blur(0px);
   }
 }
